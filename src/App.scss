@@ -1,0 +1,22 @@
+html {
+  flex: 1;
+  height: 100%;
+  background-color: #EDD7CC;
+  .container {
+    flex: 1;
+    .main-categories {
+      list-style: none;
+      .main-category {
+        display: inline;
+        margin-right: 2%;
+        text-decoration: none !important;
+        a {
+          text-decoration: none !important;
+          font-family: 'Karla', sans-serif;
+          font-size: 16px;
+          color: #D57A99;
+        }
+      }
+    }
+  }
+}

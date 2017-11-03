@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux'
 
 const initialState = {
-	categories: [],
+	mainCategories: ["Home", "About", "Skills", "Projects", "Contact"],
+	secondCategories: ["LinkedIn", "GitHub"],
 }
 
 function portfolio (state = initialState, action) {
@@ -12,7 +13,9 @@ function portfolio (state = initialState, action) {
 		// 	}
 
 		default:
-			return portfolio
+			return {
+				...state
+			}
 	}
 }
 

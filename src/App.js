@@ -1,21 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Route, Redirect, Switch, withRouter } from 'react-router-dom'
+import { connect } from 'react-redux'
+import mainPage from './Components/mainPage'
 import './App.css';
+import navBar from './Components/navBar'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          test reload
-        </p>
+      <div className="container">
+        <Route path='/' component={navBar}/>
+        <Switch>
+          <Route exact path='/' render={() => (
+            <Redirect to="/Home" />)}
+          />
+
+          <Route exact path='/Home' component={mainPage}/>
+        </Switch>
+
       </div>
     );
   }
 }
 
-export default App;
+export default withRouter(connect() (App));
