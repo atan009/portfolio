@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import mainPage from './Components/mainPage'
 import './App.css';
 import navBar from './Components/navBar'
+import projects from './Components/projects'
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
           />
 
           <Route exact path='/Home' component={mainPage}/>
+          <Route exact path='/Projects' component={projects}/>
         </Switch>
 
       </div>

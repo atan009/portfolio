@@ -1,9 +1,7 @@
 html {
-  flex: 1;
   height: 100%;
   background-color: #EDD7CC;
   .container {
-    flex: 1;
     .main-categories {
       list-style: none;
       .main-category {
@@ -13,8 +11,48 @@ html {
         a {
           text-decoration: none !important;
           font-family: 'Karla', sans-serif;
+          font-weight: bold;
           font-size: 16px;
           color: #D57A99;
+        }
+      }
+    }
+
+
+    .Homepage {
+      display: flex;
+      .Intro {
+        p {
+          font-family: 'Karla', sans-serif;
+          font-size: 26px;
+          padding-left: 40px;
+        }
+      }
+    }
+
+
+    .Projects {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      .Project {
+        h2 {
+          margin-bottom: 0;
+          .project-title {
+            padding-left: 2.5%;
+            margin-top: 40px;
+            text-decoration: none;
+            &:hover {
+              color: #1199c3;
+            }
+          }
+        }
+        .project-year {
+          padding-left: 2.5%;
+          margin-top: 0;
+        }
+        .project-image {
+          padding-left: 2.5%;
         }
       }
     }

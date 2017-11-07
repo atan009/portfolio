@@ -5,7 +5,6 @@ import { connect } from 'react-redux'
 class navBar extends Component {
 	render () {
 		const { portfolio } = this.props
-		console.log(portfolio)
 		return (
 			<ul className="main-categories">
 				{portfolio.mainCategories.map(category => (

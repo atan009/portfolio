@@ -1,19 +1,40 @@
 html {
-  flex: 1;
   height: 100%;
   background-color: #EDD7CC; }
-  html .container {
-    flex: 1; }
-    html .container .main-categories {
-      list-style: none; }
-      html .container .main-categories .main-category {
-        display: inline;
-        margin-right: 2%;
-        text-decoration: none !important; }
-        html .container .main-categories .main-category a {
-          text-decoration: none !important;
-          font-family: 'Karla', sans-serif;
-          font-size: 16px;
-          color: #D57A99; }
+  html .container .main-categories {
+    list-style: none; }
+    html .container .main-categories .main-category {
+      display: inline;
+      margin-right: 2%;
+      text-decoration: none !important; }
+      html .container .main-categories .main-category a {
+        text-decoration: none !important;
+        font-family: 'Karla', sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        color: #D57A99; }
+  html .container .Homepage {
+    display: flex; }
+    html .container .Homepage .Intro p {
+      font-family: 'Karla', sans-serif;
+      font-size: 26px;
+      padding-left: 40px; }
+  html .container .Projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; }
+    html .container .Projects .Project h2 {
+      margin-bottom: 0; }
+      html .container .Projects .Project h2 .project-title {
+        padding-left: 2.5%;
+        margin-top: 40px;
+        text-decoration: none; }
+        html .container .Projects .Project h2 .project-title:hover {
+          color: #1199c3; }
+    html .container .Projects .Project .project-year {
+      padding-left: 2.5%;
+      margin-top: 0; }
+    html .container .Projects .Project .project-image {
+      padding-left: 2.5%; }
 
 /*# sourceMappingURL=App.css.map */
