@@ -6,6 +6,7 @@ class mainPage extends Component {
 	render () {
 		return (
 			<div className="Homepage">
+				<img src={require('../Imgs/Icon.png')} alt="Profile Icon"/>
 				<div className="Intro">
 					<p>Hello! <br/>
 					I'm Alex Tan, a Front End Web Developer who enjoys<br/>
